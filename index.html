@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Dados</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <main class="game">
+        <h1>
+            JOGO DE DADOS
+        </h1>
+        <div class="game-board">
+            <div class="sorteio">
+                <span>Clique para soretear os dados</span>
+                <button onclick="sorteio()">Sortear</button>
+                <button onclick="newGame()">New Game</button>
+            </div>
+            <h3>Computer: </h3>
+            <div class="cpu">
+                <div id="cpu" class="dados-cpu">
+                    <img src="./img/dadoInterrog.png" alt="">
+                    <img src="./img/dadoInterrog.png" alt="">
+                    <img src="./img/dadoInterrog.png" alt="">
+                </div>
+            </div>
+            <div  class="player">
+                <h3>Jogador: </h3>
+                <div id="player" class="dados-player">
+                    <img src="./img/dadoInterrog.png" alt="">
+                    <img src="./img/dadoInterrog.png" alt="">
+                    <img src="./img/dadoInterrog.png" alt="">
+                </div>
+            </div>
+            <div class="winner">
+                <p id="winner">Quem será o ganhador?</p>
+            </div>
+        </div>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
